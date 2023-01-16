@@ -17,6 +17,7 @@ namespace PlayStation.PageObjects
             new TextElement(By.XPath($"//h2[@class='post-card__title']/a[contains(text(),'{articleName}')]")).ScrollAndClick();
         }
 
-        public bool IsArticleDisplayed(string articleName) => new TextElement(By.XPath($"//h1[contains(text(),'{articleName}')]")).IsDisplayed();
+        public bool IsArticleDisplayed(string articleName) =>
+            new TextElement(By.XPath($"//h1[contains(text(),'{articleName}')]")).IsDisplayed();
     }
 }

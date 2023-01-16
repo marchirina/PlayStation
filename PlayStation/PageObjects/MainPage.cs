@@ -12,7 +12,8 @@ namespace PlayStation.PageObjects
         private static Button NewsTab => new Button(By.XPath("//button[@id='menu-button-primary--msg-news']"));
         private static Button PSBlogButton => new Button(By.XPath("//a[@id='link-secondary--msg-ps-blog']"));
         private static Button HardwareTab => new Button(By.XPath("//button[@id='menu-button-primary--msg-hardware']"));
-        private static Button PS5EquipmentButton => new Button(By.XPath("//div[contains(@class,'shared-nav__secondary-parent--msg_hardware')]//a[@id='link-secondary--msg-ps5']"));
+        private static Button PS5EquipmentButton =>
+            new Button(By.XPath("//div[contains(@class,'shared-nav__secondary-parent--msg_hardware')]//a[@id='link-secondary--msg-ps5']"));
         
         public void OpenTechnicalSupportPage()
         {
