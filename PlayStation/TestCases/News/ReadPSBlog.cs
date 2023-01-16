@@ -2,6 +2,8 @@
 
 namespace PlayStation.TestCases.News
 {
+    [TestFixture]
+    [Parallelizable(ParallelScope.All)]
     public class ReadPSBlog : BaseTest
     {
         [Test]

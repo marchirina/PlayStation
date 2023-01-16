@@ -2,6 +2,8 @@
 
 namespace PlayStation.TestCases.Support
 {
+    [TestFixture]
+    [Parallelizable(ParallelScope.All)]
     public class TechnicalSupport : BaseTest
     {
         [Test]

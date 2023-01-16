@@ -7,7 +7,7 @@ namespace PlayStation.Elements
     {
         private readonly IWebElement _element;
         private readonly By _locator;
-        public static TimeSpan Timeout = TimeSpan.FromSeconds(Convert.ToDouble(ConfigurationManager.AppSetting["TIMEOUT"]));
+        public static TimeSpan Timeout = TimeSpan.FromSeconds(Convert.ToDouble(TestSettings.Timeout));
         private IWebElement Element => _element ?? Browser.Driver.FindElements(_locator).FirstOrDefault();
 
         protected BaseElement(By locator)

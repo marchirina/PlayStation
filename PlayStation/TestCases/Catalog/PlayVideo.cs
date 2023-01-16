@@ -2,6 +2,8 @@
 
 namespace PlayStation.TestCases.Catalog
 {
+    [TestFixture]
+    [Parallelizable(ParallelScope.All)]
     public class PlayVideo : BaseTest
     {
         [Test]
