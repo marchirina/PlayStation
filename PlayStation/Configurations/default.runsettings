@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <TestRunParameters>
+    <Parameter name="Browser" value="Chrome"/>
+    <Parameter name="IsHeadlessMode" value="false"/>
+    <Parameter name="Timeout" value="40"/>
+    <Parameter name="DefaultPollingInterval" value="500"/>
+  </TestRunParameters>
+</RunSettings>
